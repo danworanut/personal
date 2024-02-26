@@ -81,7 +81,7 @@ export default function Calendar() {
     const updatedEvents = newEvents.map(event => ({ title: event.title, start: event.start, end: event.end, color: event.color }));
     setEvents(updatedEvents);
   }
-// test
+  
   const deleteValue = (id) => {
     const updatedValues = [...values];
     const index = updatedValues.findIndex(value => value.id === id); // Fix the typo here
