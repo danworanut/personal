@@ -1,0 +1,142 @@
+
+
+.header {
+    background-color: cadetblue;
+}
+
+.hamburger  {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 15rem;
+    height: 100%;
+    background-color: var(--second-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.logo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.profile {
+    margin-top: -6rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .avatar {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+} */
+.avatar img {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+}
+
+.name_user {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--sidebar-font);
+}
+
+.menu {
+    margin-top: -7rem;
+}
+
+.menu_list {
+    list-style: none;
+    color:  var(--sidebar-font);
+    padding: 1rem;
+ 
+   
+}
+
+.menu_content {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color:  var(--sidebar-font);
+    font-weight: 600;
+}
+
+.menu_list:hover, 
+ .menu_content:hover {
+    background-color: var(--primary-bg);
+    color: white;
+}
+
+
+.hidden {
+    display: none;
+  }
+  
+@media screen and (max-width: 700px) {
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        padding-right: 2rem;
+        align-items: center;
+        background-color:#ECEAEF;
+
+    }
+
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+
+    }
+
+    .profile {
+        margin-top: 0;
+    }
+
+    .menu {
+        margin-top: 0;
+    }
+    
+
+  }
+  
+
+  @media screen and (max-width: 400px) {
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        padding-right: 2rem;
+        align-items: center;
+
+    }
+
+    .menu_content {
+      text-align: center;
+      float: none;
+      margin-left: 0;
+    }
+  }
